@@ -12,7 +12,9 @@ yellow =  ("\033[93m")
 red = ("\033[91m")
 def dpkgClear():
     system("xterm -e sudo rm -rf  /var/lib/dpkg/lock")
+    system("clear")
     system("xterm -e sudo dpkg --configure -a")
+    system("clear")
 def list():
     file = open("/etc/apt/sources.list", "w")
     file.write("""deb http://http.kali.org/kali kali-rolling main contrib non-free""")
