@@ -3,8 +3,8 @@ import os
 from os import system
 from time import sleep
 import smtplib
-from email.mime.multipart import MIMEMultipart
-from email.mime.text import MIMEText
+#from email.mime.multipart import MIMEMultipart
+#from email.mime.text import MIMEText
 
 green = ("\033[92m")
 blue = ("\033[94m")
@@ -32,7 +32,6 @@ def logo():
 * 2. Grafik Uygulamaları      *
 * 3. Bug ve sorun gidermeler  *
 * 4. Arayüz Özelleştirme      *
-* 5. Destek & Öneri           *
 * 0. Ana Menü                 *
 * 99. çıkmak için  yazınız    *
 *******************************""")
@@ -180,7 +179,8 @@ try:
                     print("Geçerli işlem şeciniz")
             else:
                 print("Geçerli işlem seçiniz")
-        elif (scm == 5):
+#destek ve öneri alanı guvenlık amacı ile askıya alınmıştır..                
+        elif (pass):
             try:
 
                 print("""
@@ -192,7 +192,7 @@ try:
                 sleep(0.5)
                 gm = input("Gmail Adresinizi Giriniz.")
                 kş = input("Gmail şifrenizi giriniz")
-                hm = "zerron3152@gmail.com"
+                hm = pass
                 mb = "Uygulama öneri"
                 gmail = input("Gönderilecek önerinizi Mesaj Olarak Yazınız:")
 
